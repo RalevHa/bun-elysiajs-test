@@ -1,7 +1,5 @@
 import { describe, expect, it } from 'bun:test';
-import { Elysia } from 'elysia';
-import { Note } from '../models/noteModel';
-import { NoteController } from '../controllers/noteController';
+import { Elysia } from 'elysia'; 
 import { noteRouter } from '../routes/noteRoutes';
 
 const apiVersion = process.env.API_VERSION || 'v1';
