@@ -19,7 +19,7 @@ export const noteRouter = (app: Elysia) => {
                 }) 
             } 
         )
-        .post('', ({ body }) => {
+        .post('/', ({ body }) => {
             return noteController.createNote(body.data);
         }, {
             body: t.Object({
